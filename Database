@@ -88,3 +88,33 @@ INSERT INTO `follower` (`id`, `id_usuario1`, `id_usuario2`) VALUES
 --
 -------------------------------------------- Termina la tabla follower
 --
+
+
+
+
+--
+-- Estructura de la tabla `comentario` (Jordi Eslava Barrera)
+--
+
+CREATE TABLE IF NOT EXISTS `comentario` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(255) DEFAULT NULL,
+  `contenido` varchar(255) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `id_usuario` int(6) DEFAULT NULL,
+  `id_documento` int(6) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+
+--
+-- Volcado de datos para la tabla `comentario`
+--
+
+INSERT INTO `comentario` (`id`, `titulo`, `contenido`, `fecha`, `id_usuario`, `id_documento`) VALUES
+(10, 'titulo asdas', 'dsgsaghahfga', '2013-11-28', 1, 4),
+(11, 'rafa', 'rafa', '2013-11-28', 3, 1),
+(12, 'rafa1', 'rafa1', '2013-11-28', 3, 1),
+(13, 'rafa5', 'rafa6', '2013-11-28', 2, 4);
+
+
+
