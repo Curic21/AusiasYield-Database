@@ -116,5 +116,39 @@ INSERT INTO `comentario` (`id`, `titulo`, `contenido`, `fecha`, `id_usuario`, `i
 (12, 'rafa1', 'rafa1', '2013-11-28', 3, 1),
 (13, 'rafa5', 'rafa6', '2013-11-28', 2, 4);
 
+--
+-------------------------------------------- Termina la tabla comentario
+--
 
+--
+-- Estructura de la tabla `requerimiento` (Jordi Eslava Barrera)
+--
+
+CREATE TABLE IF NOT EXISTS `requerimiento` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `enunciado` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fechaalta` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=18 ;
+
+--
+-- Volcado de datos para la tabla `requerimiento`
+--
+
+INSERT INTO `requerimiento` (`id`, `enunciado`, `fechaalta`) VALUES
+(2, 'requerimiento 55', '2013-10-04'),
+(3, 'requerimiento 2', '2013-11-04'),
+(4, 'requerimiento 4', '2013-11-04'),
+(5, 'requerimiento 5', '2013-11-04'),
+(7, 'requerimiento 7', '2013-11-04'),
+(8, 'requerimiento 9', '2013-11-04'),
+(9, 'requerimiento 14', '2013-11-04'),
+(10, 'requerimiento 18', '2013-11-04'),
+(11, 'requerimiento 20', '2013-11-04'),
+(12, 'requerimiento 23', '2013-11-04'),
+(13, 'Requerimiento 3', '2013-11-19'),
+
+--
+-------------------------------------------- Termina la tabla requerimiento
+--
 
